@@ -15,7 +15,87 @@
 
 This paper should be categorized into theoretical ones. It proclaims a
 heuristic optimization algorithm used to speed up the traditional way
-of calculating energy consumption.
+of calculating energy consumption. In general, the approach this paper
+takes to induce its algorithms is correct but the algorithms are a
+little self-evident.
+\par
+Strengths. The authors created a new algorithm which is both
+computationally efficient and more practical than the traditional one.
+\par
+Weaknesses. The main weakness of this paper is in the
+algorithms. There are not some fancy operations but merely patching
+the in-use LP method to their own needs, namely, having a tighter
+restriction. 
+\par
+Evaluation. Overall, this paper deserves 7.5/10.
+\par
+Generally speaking, this pure theoretical paper is well-written with
+regard to the specific problem it's tackling. There are no obvious
+grammar errors. However, a few citations are missing in the paper in
+section 2.1.2 and 2.1.4. It puts forward two algorithms that can be
+regarded as a mediocre between MILP and LP. These two algorithms are
+created ``in need'', so they are not easy to generalize. Moreover, the
+authors do state that this is a much simplified scenario to consider
+AC energy consumption optimization so its validity in real-life is
+left to be proved.
+
+\section{Paper97}
+\label{sec:paper97}
+
+This paper is a theoretical one with real-life data collected and
+analyzed by ``best practice'' data mining method, i.e. KNN\@. After
+analyzing zone-based occupancy data, one more theoretical HVAC method
+is put forward to compete against traditional ON/OFF one. The
+simulation of FineTherm method shows a over 30\% energy reduction,
+which will be put into examination in real world according to the
+authors.
+\par
+Strengths. A scale-free metric is created to tackle energy efficiency
+in office buildings. This metric is generalizable so it's easy for
+other researchers to validate. Moreover, the model built to reflect
+occupancy is ``preliminary'' at the same time but reported to be
+accurate. 
+\par
+Weaknesses. Overall, the paper is a good one. The main weakness lies
+in the STEM equation itself, which is also admitted by authors in
+section 2.2. By using this equation we can get a number, but we can
+not infer from it the exact situation in the building, the STEM value
+is high may due to either a high occupancy or a high energy
+consumption. 
+\par
+In general, this paper demonstrates its contributions properly. We can
+find few grammatical errors and sufficient citations to work done
+before. From this paper we can get several handy equations to use or
+validate. But the occupancy model may suffer in cases like a
+completely open office, and as with the FineTherm approach, more
+simulations and real world validations are expected.
+
+\section{Paper99}
+\label{sec:paper99}
+
+This paper is more or less an experimental one featuring a mobile
+phone application used to do sort of ``real-time'' occupant comfort
+data collection and a pretty straight-forward algorithm to dynamically
+control BMS system, thus improving the overall occupants' comfort
+level. 
+\par
+Strengths. Since this paper focuses more on engineering and
+experiments, it is successful with regard to this field. Several
+experiments and simulations are carried out to show that the authors'
+ideas are applicable. 
+\par
+Weaknesses. The TCC model described in section 4 is pretty
+straight-forward and a little preliminary. Before formally building
+their model, the authors make some justifications why they do not use
+the other one which may have a higher accuracy. For this part more
+comparisons are expected.
+\par
+In general, this paper does not overstate its contributions. A few
+experiments were set based on an algorithm to optimize office
+temperature by controlling BMS, with a metric computed using TCC
+model. However, the validity of this TCC model is well worth more
+investigations. For example, what could the results be if we make the
+$L(T_{i},T_{o})$ more complicated?
 
 
 
