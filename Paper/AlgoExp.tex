@@ -1,0 +1,35 @@
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+
+
+\documentclass{article}
+
+\begin{document}
+The step by step explanation of algorithm 1 in paper 99 are as
+follows. 
+\begin{enumerate}
+\item The core part of paper 99 is their thermal comfort correlation
+  model, which emphasizes on the indoor, outdoor temperature and human
+  feedback through a mobile app. In short, they see there is a mapping
+  between comfort level (by index, from $-3~to~3$).
+\item The algorithm begins by setting an initial indoor temperature
+  which ``tries'' to minimize the comfort index, in turn they regard
+  this as ``maximize'' the human comfort. (In table 1, page 4, the
+  other values are ``non-neutral''.)
+\item Then they try to check if this temperature satisfies (the voted
+  comfort index should be $-1,0,1$, other values are invalid) most
+  people (an example threshold is $80\%$).
+\item If this temperature makes more than $80\%$ people comfortable,
+  then it's chosen.
+\item Else, eliminate the person that is the ``pickiest'', a lively
+  example would be a person who votes 28 degrees as too cold. (The
+  case is that there may be coincide people who vote the same, making
+  them the ``pickiest'' at all times. The algorithm should have
+  mentioned that in this case a random one should be taken out of
+  consideration.) After elimination, restart from step 2 by picking
+  another temperature which ``tries to satisfy most people''.
+\end{enumerate}
+\end{document}
